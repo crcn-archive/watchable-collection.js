@@ -58,6 +58,27 @@ describe(__filename + "#", function() {
         expect(v).to.be(1);
     });
 
+    it("can call 'push'", function() {
+        var c = new WatchableCollection([1]);
+        c.push(2);
+        expect(c.at(1)).to.be(2);
+        expect(c.length).to.be(2);
+    });
+
+
+    it("can call 'unshift'", function() {
+        var c = new WatchableCollection([1]);
+        c.unshift(2);
+        expect(c.at(0)).to.be(2);
+        expect(c.length).to.be(2);
+    });
+
+
+    it("can call 'indexOf'", function() {
+        var c = new WatchableCollection([1,2]);
+        expect(c.indexOf(2)).to.be(1);
+    });
+
     it("can call 'splice'", function() {
         var c = new WatchableCollection([1,2,3,4]);
         var vs = c.splice(1, 2);
