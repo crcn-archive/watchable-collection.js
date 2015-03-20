@@ -92,4 +92,12 @@ describe(__filename + "#", function() {
         c.set("a", 1);
         expect(c.a).to.be(1);
     });
+
+    it("can change the source of the collection", function() {
+        var c = new WatchableCollection();
+        c.set("source", [1,2,3,4]);
+        expect(c.length).to.be(4);
+        c.set("source", [1,2,3,4,5,6,7]);
+        expect(c.length).to.be(7);
+    })
 });
