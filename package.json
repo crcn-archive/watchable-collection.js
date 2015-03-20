@@ -1,0 +1,39 @@
+{
+  "name": "watchable-collection",
+  "version": "0.0.1",
+  "description": "",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "gulp test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mojo-js/watchable-collection.js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mojo-js/watchable-collection.js/issues"
+  },
+  "homepage": "https://github.com/mojo-js/watchable-collection.js",
+  "devDependencies": {
+    "browser-sync": "^2.3.1",
+    "coveralls": "^2.11.2",
+    "expect.js": "^0.3.1",
+    "gulp": "^3.8.11",
+    "gulp-istanbul": "^0.6.0",
+    "gulp-jshint": "^1.9.4",
+    "gulp-mocha": "^2.0.0",
+    "gulp-plumber": "^1.0.0",
+    "gulp-react": "^3.0.1",
+    "istanbul": "^0.3.6",
+    "jscs": "^1.11.3",
+    "jshint": "^2.6.0",
+    "karma": "^0.12.31",
+    "mocha": "^2.1.0",
+    "yargs": "^3.5.4"
+  },
+  "dependencies": {
+    "watchable-object": "0.0.3"
+  }
+}
