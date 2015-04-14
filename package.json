@@ -1,6 +1,6 @@
 {
   "name": "watchable-collection",
-  "version": "1.0.0",
+  "version": "2.0.1",
   "description": "",
   "main": "./lib/index.js",
   "scripts": {
@@ -34,6 +34,6 @@
     "yargs": "^3.5.4"
   },
   "dependencies": {
-    "watchable-object": "1.0.x"
+    "watchable-object": "2.0.x"
   }
 }
