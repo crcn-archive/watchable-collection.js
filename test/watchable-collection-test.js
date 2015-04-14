@@ -198,4 +198,10 @@ describe(__filename + "#", function() {
         }, 10);
       });
     });
+
+    it("updates the length of the collection immediately after source changes", function() {
+      var c = new WatchableCollection();
+      c.set("source", [1,2,3,4]);
+      expect(c.length).to.be(4);
+    });
 });
